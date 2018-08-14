@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Analisis numerico</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <script src="js/jquery-3.3.1.min.js"></script>
+		 <script src="js/bootstrap.min.js"></script>
+		 <script src="js/index.js"></script>
+</head>
+<body class="bg-light">
+
+
+<div class="container">
+			<div class="row">
+		        <div class="col-md-2"></div>
+		        <div class="col-md-8"><h1>Conversión de bases numéricas</h1></div>
+		        <div class="col-md-2"></div>
+		     </div>
+		<form class="needs-validation" novalidate>
+		     <div class="row">
+		     	
+     	              <div class="col-md-6 mb-3">
+		                <label for="firstName">Ingrese numero</label>
+		                <input type="number" min="1" max="100" class="form-control" id="numero" placeholder="" value="" required="required">
+		                <div class="invalid-numero">
+		                  El numero es requerido.
+		                </div>
+		              </div>
+
+         			 <div class="col-md-6 mb-3">
+			                <label for="state">Seleccione base</label>
+			                <select class="custom-select d-block w-100" id="base" required="required">
+			                  <option value="">Escoja una base...</option>
+			                  <option>Binario</option>
+			                  <option>Octal</option>
+			                  <option>Hexadecimal</option>
+			                </select>
+			                <div class="invalid-base">
+			                  Ingrese una base correcta
+			                </div>
+		              </div>
+						
+		              	<button class="btn btn-primary btn-lg btn-block" type="button" id="calcular">Calcular</button>
+		     </div>
+     	</form>
+</div>
+
+	
+</body>
+</html>
