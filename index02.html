@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Analisis numerico</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <script src="js/jquery-3.3.1.min.js"></script>
+		 <script src="js/bootstrap.min.js"></script>
+		 <script src="js/index02.js"></script>
+</head>
+<body class="bg-light">
+
+
+<div class="container">
+			<div class="row">
+		        <div class="col-md-2"></div>
+		        <div class="col-md-8"><h1>Conversión de bases numéricas</h1></div>
+		        <div class="col-md-2"><img src="img/logocun.png" alt="" height="70%" width="70%"></div>
+		     </div>
+ 			<div class="row">
+		        <div class="col-md-12">Por:</div>
+		        <div class="col-md-12">Brayan Moreno</div>
+		        <div class="col-md-12">Juan Carlos Romero Jaimes</div>
+		     </div>
+
+		<form class="needs-validation" novalidate>
+		     <div class="row">
+		     	
+     	              <div class="col-md-6 mb-3">
+		                <label for="firstName"><strong>Ingrese numero hexadecimal</strong></label>
+		                <input type="number" min="1" max="100" class="form-control" id="numero" placeholder="" value="" required="required">
+		                <div class="invalid-numero">
+		                  El numero es requerido.
+		                </div>
+		              </div>
+
+         			 <div class="col-md-6 mb-3">
+			                <label for="state"><strong>Seleccione base</strong></label>
+			                <select class="custom-select d-block w-100" id="base" required="required">
+			                  <option value="">Escoja una base...</option>
+			                  <option>Decimal</option>
+			                  <option>Octal</option>
+			                  <option>Binario</option>
+			                </select>
+			                <div class="invalid-base">
+			                  Ingrese una base correcta
+			                </div>
+		              </div>
+						
+		              	<button class="btn btn-primary btn-lg btn-block" type="button" id="calcular">Calcular</button>
+		     </div>
+     	</form>
+
+  	<div class="row">
+		        <div class="col-md-12" id="mensaje__base"></div>
+ 	</div>
+
+ 	<div class="row">
+ 		<div class="col-md-6" id="numero_print"></div>
+ 		<div class="col-md-6" id="base_print"></div>
+ 	</div>
+
+ 	<div id="calculos">
+		       <!-- se llena desde index.js -> funcion calculos -->
+ 	</div>
+
+ 	<div class="row">
+ 		<div class="col-md-6" id="resultado"></div>
+	</div>
+
+
+</div>
+
+	
+</body>
+</html>

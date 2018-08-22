@@ -1,7 +1,7 @@
 //Variables para texto
   var mensaje_bin = "<strong>Dividir</strong> por<strong> 2 </strong> sucesivamente el valor hasta llegar a <strong>0</strong>. Cuando exista residuo poner un <strong>1</strong>, cuando la division sea exacta poner un <strong>0</strong>.<br> Finalmente tomar los residuos de abajo hacia arriba.";
   var mensaje_oct = "<strong>Dividir</strong> por<strong> 8 </strong> sucesivamente el valor hasta llegar a <strong>0</strong>. Cuando exista residuo poner un <strong>1</strong>, cuando la division sea exacta poner un <strong>0</strong>.<br> Finalmente tomar los residuos de abajo hacia arriba.";
-  var mensaje_hex = "<strong>Dividir</strong> por<strong> 16 </strong> sucesivamente el valor hasta llegar a <strong>0</strong>. Cuando exista residuo poner un <strong>1</strong>, cuando la division sea exacta poner un <strong>0</strong>.<br> Finalmente tomar los residuos de abajo hacia arriba.";
+  var mensaje_hex = "<strong>Dividir</strong> por<strong> 16 </strong> sucesivamente el valor hasta llegar a <strong>0</strong>. Cuando exista residuo poner un <strong>1</strong>, cuando la division sea exacta poner un <strong>0</strong>.<br> Finalmente tomar los residuos de abajo hacia arriba.<br> Los números del <strong>10</strong> al <strong>15</strong> son reemplazados por letras de la <strong>A</strong> a la <strong>F</strong>.";
 //Variables para texto
 
 $(document).on('ready',function(){
