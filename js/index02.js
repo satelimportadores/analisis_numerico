@@ -9,6 +9,7 @@ $(document).on('ready',function(){
   //Esconder errores
   $('.invalid-numero').hide();
   $('.invalid-base').hide();
+  $('#numero').hide();
   //Esconder errores
 
   //Boton calcular
@@ -37,12 +38,15 @@ $(document).on('ready',function(){
             switch (base) {
                 case ('Hexadecimal'):
                       $('#texto').html('Ingresa un numero en hexadecial');
+                      $('#numero').fadeIn( "slow" );
                     break;
                 case ('Octal'):
                      $('#texto').html('Ingresa un numero en octal');
+                     $('#numero').fadeIn( "slow" );
                     break;
                 case ('Binario'):
                      $('#texto').html('Ingresa un numero en Binario');
+                     $('#numero').fadeIn( "slow" );
                     break;                    
             }
     });
@@ -67,19 +71,37 @@ $(document).on('ready',function(){
                             case ('A'):
                             valor = 10
                             break;
+                            case ('a'):
+                            valor = 10
+                            break;
                             case ('B'):
+                            valor = 11
+                            break;
+                            case ('b'):
                             valor = 11
                             break;
                             case ('C'):
                             valor = 12
                             break;
+                            case ('c'):
+                            valor = 12
+                            break;
                             case ('D'):
+                            valor = 13
+                            break;
+                            case ('d'):
                             valor = 13
                             break;
                             case ('E'):
                             valor = 14
                             break;
+                            case ('e'):
+                            valor = 14
+                            break;
                             case ('F'):
+                            valor = 15
+                            break;
+                            case ('f'):
                             valor = 15
                             break;
                         }
