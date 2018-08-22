@@ -27,19 +27,11 @@
 		<form class="needs-validation" novalidate>
 		     <div class="row">
 		     	
-     	              <div class="col-md-6 mb-3">
-		                <label for="firstName"><strong>Ingrese numero hexadecimal</strong></label>
-		                <input type="number" min="1" max="100" class="form-control" id="numero" placeholder="" value="" required="required">
-		                <div class="invalid-numero">
-		                  El numero es requerido.
-		                </div>
-		              </div>
-
          			 <div class="col-md-6 mb-3">
-			                <label for="state"><strong>Seleccione base</strong></label>
+			                <label for="state"><strong>Convertir un numero que esta en:</strong></label>
 			                <select class="custom-select d-block w-100" id="base" required="required">
 			                  <option value="">Escoja una base...</option>
-			                  <option>Decimal</option>
+			                  <option>Hexadecimal</option>
 			                  <option>Octal</option>
 			                  <option>Binario</option>
 			                </select>
@@ -47,8 +39,23 @@
 			                  Ingrese una base correcta
 			                </div>
 		              </div>
+
+     	              <div class="col-md-6 mb-3">
+		                <label for="firstName"><strong><span id="texto"></span></strong></label>
+		                <input type="text" class="form-control" id="numero" placeholder="" value="" required="required">
+		                <div class="invalid-numero">
+		                  El numero es requerido.
+		                </div>
+		              </div>
+
 						
+					<div class="col-md-6 mb-3">	
 		              	<button class="btn btn-primary btn-lg btn-block" type="button" id="calcular">Calcular</button>
+		             </div>
+
+	    	          	<div class="col-md-6 mb-3">
+		              		<a href="index.html"><button type="button" class="btn btn-info btn-lg btn-block">Otras conversiones</button></a>
+		              	</div>
 		     </div>
      	</form>
 
